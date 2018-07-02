@@ -1,0 +1,123 @@
+body {
+  background: url("Images/magic.jpg") no-repeat center fixed;
+  padding: 10px;
+  -webkit-backgrount-size: cover;
+  -moz-background: cover;
+  background-size: cover;
+}
+/*Change later*/
+h2 {
+  color: blueviolet;
+}
+#heading {
+  color: greenyellow;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 2.5em;
+  background: #4aefb3;
+  -webkit-animation: Animation1 5s infinite;
+  border-left: 5px solid red;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border-bottom: 5px solid red;
+  padding: 50px;
+}
+@-webkit-keyframes 'Animation1' {
+  50% {
+    background-color: #44cec7;
+  }
+}
+@keyframes 'Animation1' {
+  50% {
+    background-color: #44cec7;
+  }
+}
+#magic {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: palevioletred;
+  font-family: "Bilbo Swash Caps", cursive;
+}
+#website {
+  font-family: Impact;
+}
+#list1 {
+  color: rgb(94, 255, 0);
+}
+
+#list2 {
+  color: #ff1900;
+  list-style-type: square;
+}
+
+.title {
+  font-style: italic;
+}
+.content {
+  background-color: rgb(54, 235, 205);
+  padding: 5px;
+  -webkit-animation: Animation1 10s infinite;
+  border-left: 5px solid red;
+  color: blueviolet;
+  font-family: "Bilbo Swash Caps", cursive;
+  font-size: 20px;
+  font-weight: bold;
+}
+#rainbow {
+  color: red;
+  -webkit-animation: Animation2 10s infinite;
+  font-size: 50px;
+}
+@-webkit-keyframes 'Animation2' {
+  50% {
+    color: blue;
+  }
+}
+@keyframes 'Animation2' {
+  50% {
+    color: blue;
+  }
+}
+/*Rainbow animation*/
+.package {
+  transition: all 500ms ease-out 1s;
+  webkit-transition: all 500ms ease-out 1s;
+  -moz-transition: all 500ms ease-out 1s;
+  -o-transition: all 500ms ease-out 1s;
+  background-color: #4aefb3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 50px;
+  font-size: 1.2em;
+  border-bottom: 10px solid #ff6a00;
+  width: 200px;
+}
+.package:hover {
+  background-color: #ff6a00;
+  color: blue;
+  cursor: pointer;
+}
+#price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/*Used for the pricing table*/
+a:link {
+  color: ghostwhite;
+}
+a:visited {
+  color: gold;
+}
+a:hover {
+  color: blueviolet;
+}
+a:active {
+  color: red;
+}
+.list4 {
+  padding-left: 20px;
+}
