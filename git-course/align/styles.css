@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0;
+  height: calc(100vh - 20px);
+  width: calc(100vw - 20px);
+  border: 10px solid rgb(182, 122, 245);
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* align-content: center; */
+}
+img {
+  /* margin: 10px; */
+  /* height: 90px; */
+  /* width: 150px; */
+  margin: 10px;
+  height: 70px;
+  width: 120px;
+}
+.img2 {
+  align-self: center;
+}
