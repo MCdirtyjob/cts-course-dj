@@ -1,17 +1,18 @@
 body {
-  background-color: lightgray;
-  font-family: "Roboto Mono", monospace;
+  margin: 0;
+  padding: 0;
 }
-.error_wrapper {
+.container {
+  margin: 0;
+  height: calc(100vh - 20px);
+  width: calc(100vw - 20px);
+  border: 10px solid goldenrod;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   flex-direction: column;
+  justify-content: center;
 }
-.error_wrapper > .error_heading {
-  margin-bottom: 42px;
-}
-img {
-  width: 20%;
+.container > .img_blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
