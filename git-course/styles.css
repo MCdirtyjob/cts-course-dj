@@ -1,8 +1,42 @@
 html {
+  font-family: "Exo 2", sans-serif;
 }
 body {
   margin: 0px;
 }
 .navbar {
   background: rgb(15, 121, 153);
+}
+.navbar div {
+  display: none;
+}
+.navbar .toggle,
+.navbar .brand {
+  display: inline-block;
+}
+.navbar .link {
+  display: block;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+  background: rgb(44, 165, 202);
+  color: white;
+}
+.navbar .link:hover,
+.navbar .link:active {
+  color: rgb(44, 165, 202);
+  background: white;
+}
+.navbar .brand {
+  width: 10em;
+  text-align: center;
+  padding: 1em;
+  color: white;
+}
+.navbar a {
+  text-decoration: none;
+}
+.navbar .toggle {
+  padding: 1em;
+  color: black;
 }
