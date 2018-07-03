@@ -40,12 +40,42 @@ body {
   padding: 1em;
   color: black;
 }
-.left {
-  display: flex;
-  align-items: flex-start;
+@media (min-width: 48em) {
+  .navbar {
+    display: flex;
+  }
+  .navbar div {
+    display: flex;
+  }
+  .navbar .left,
+  .navbar .right {
+    display: flex;
+    flex: 1;
+  }
+  .navbar link {
+    width: auto;
+  }
+  .navbar .right {
+    justify-content: flex-end;
+  }
+  .navbar .toggle {
+    display: none;
+  }
 }
-.right {
-  display: flex;
-  align-content: flex-end;
-  background-color: rgb(44, 165, 202);
+@media (min-width: 48em) {
+  .navbar div {
+    display: flex;
+  }
+}
+@media (max-width: 48em) {
+  .navbar.active .toggle {
+    background: rgb(44, 165, 202);
+    color: white;
+  }
+  .navbar .brand {
+    text-align: left;
+  }
+  .navbar.active div {
+    display: block;
+  }
 }
