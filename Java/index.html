@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lodash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    //filter
+    const players = [
+        { name: 'Bregman, A', battingAverage: 0.284 },
+        { name: 'Altuve, J', battingAverage: 0.346 },
+        { name: 'Springer, G', battingAverage: 0.283 },
+        { name: 'Gurriel, Y', battingAverage: 0.299 },
+        { name: 'Gonzalez, M', battingAverage: 0.303 }
+    ]
+
+    const over300 = _.filter(players, player => {
+        return player.battingAverage > 0.300;
+    });
+
+    console.log(over300);
+    //Times 
+    // randNumber = () => {
+    //     return Math.round(Math.random() * 100);
+    // }
+
+    // const sampleNumbers = _.times(5, randNumber);
+
+    // console.log(sampleNumbers);
+</script>
+
+</html>
