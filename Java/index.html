@@ -14,17 +14,23 @@
 
 </body>
 <script>
+    class DevcampError extends Error {
+        constructor(msg = 'An error occured', ...params) {
+            super(...params);
+            this.msg = msg;
+        }
+    }
+
     function siteComponent(func) {
         return func();
     }
-
     widget = () => {
         return '<div>Hi there</div>';
     }
     try {
         console.log(siteComponent(widget));
     } catch (e) {
-        console.log('An error occcured with the siteComponent', (e);
+        throw new DevcampError('DevcampError', e)
     }
 </script>
 
