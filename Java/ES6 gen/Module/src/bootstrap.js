@@ -1,2 +1,3 @@
-// ES6 code goes here
-console.log("Hi there");
+import { multiply } from "./WHATEVER";
+
+console.log(multiply(2, 5));
