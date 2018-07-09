@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title></title>
+    <style>
+        .activeHeading {
+            color: firebrick;
+            font-size: 3em;
+            cursor: pointer;
+        }
+
+        .nonactiveHeading {
+            color: coral;
+            font-size: 4em;
+            cursor: pointer;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="mainheading" class="activeHeading">
+        Hi there
+    </div>
+</body>
+<script>
+    const heading = document.getElementById('mainheading')
+
+    heading.onclick = () => {
+        if (heading.classList.contains('activeHeading')) {
+            heading.classList.remove('activeHeading')
+            heading.classList.add('nonactiveHeading')
+        } else {
+            heading.classList.remove('nonactiveHeading')
+            heading.classList.add('activeHeading')
+        }
+    }
+</script>
+
+</html>
