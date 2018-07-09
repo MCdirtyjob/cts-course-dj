@@ -22,7 +22,8 @@
     // }
 
     dateBtn.addEventListener('click', (event) => {
-        dateElement.innerHTML = Date();
+        dateElement.innerHTML = Date(); const captionElement = event.target.parentElement.children[1];
+        captionElement.className = 'show-img-overlay';
     })
 </script>
 
