@@ -1,0 +1,12 @@
+.homepage-logo {
+  display: grid;
+  justify-content: center;
+  margin-top: 215px;
+  width: 100%;
+}
+
+.homepage-search-bar {
+  display: grid;
+  justify-content: center;
+  width: 66vw;
+}
