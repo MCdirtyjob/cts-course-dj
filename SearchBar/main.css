@@ -1,12 +1,35 @@
-.homepage-logo {
+.container {
   display: grid;
-  justify-content: center;
-  margin-top: 215px;
-  width: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  height: 100vh;
+  align-items: center;
+}
+.homepage-logo img {
+  grid-column: 1/-1;
+  grid-row: 1;
 }
 
 .homepage-search-bar {
-  display: grid;
-  justify-content: center;
-  width: 66vw;
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+
+.homepage-search-bar input {
+  height: 3rem;
+  width: 50rem;
+}
+.homepage-search-bar input[type="text"] {
+  font-size: 2.5em;
+  font-family: "Font Awesome\ 5 Free", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #585858;
+  box-shadow: 2px 3px 20px 1px rgba(0, 0, 0, 0.1);
+  border: 0px solid transparent;
+  border-radius: 0.5rem;
+}
+.homepage-btn {
+  grid-column: 2;
+  grid-row: 3;
 }
