@@ -112,20 +112,53 @@
         font-size: 19px;
     }
 
-    .alternate_logo_images {
+    .alternate_options_images {
         margin-top: 80px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         grid-gap: 100px 40px;
+
     }
 
     .image_logos {
-        width: 60px;
+        width: 60%;
     }
 
     .text_logos {
         width: 90%;
+    }
+
+    .additional-branding-details {
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+
+    .additional-branding-details a {
+        color: #4fb8e8;
+        font-size: 19px;
+    }
+
+    .additional-branding-details p {
+        margin-bottom: 42px;
+    }
+
+    @media (max-width: 48em) {
+        .style-details,
+        .dos-donts-wrapper {
+            grid-template-columns: 1fr;
+            grid-gap: 50px;
+        }
+
+        .style-details-text {
+            text-align: center;
+        }
+        .dont-image-box {
+            width: 80%;
+        }
+        .dont-image-box div {
+            font-size: 140%;
+        }
     }
 </style>
 
@@ -216,6 +249,18 @@
                     <img class="text_logos" src="images/ds_text_logo.png" alt="">
 
                 </div>
+            </div>
+            <div class="additional-branding-details">
+                <h3>Asset Download</h3>
+                <p>
+                    <a href="#">Download .zip file.</a>
+                </p>
+
+                <h3>Usage</h3>
+                <p>
+                    Please remember to adhere to the above guidlines when referencing and using our logos. If you are unsure of the correct protocol
+                    for a particular usecase, feel free to ask us at the following email: support@dailysmarty.com.
+                </p>
             </div>
         </div>
     </div>
