@@ -1,0 +1,41 @@
+body {
+  background: url(teslas.jpg) no-repeat;
+  background-size: 100%;
+}
+header #nav-right {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  text-align: right;
+  font-size: 15px;
+  color: white;
+}
+header #nav-left {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  text-align: left;
+  font-size: 15px;
+  color: white;
+}
+header ul li {
+  display: inline-block;
+  margin: 10px;
+}
+#logo img {
+  width: 12%;
+}
+footer {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0px;
+  color: white;
+}
+#footer-center ul li {
+  display: inline-block;
+}
+#flag {
+}
