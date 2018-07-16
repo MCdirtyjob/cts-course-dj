@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Input from './input';
+import Content from './content';
 class Card extends Component{
 
     constructor(){
@@ -20,18 +21,47 @@ class Card extends Component{
             adjectiveFour:'',
             nounThree:'',
             celebFour: '',
-            adjectiveFive:'' 
+            adjectiveFive:'',
+            contentVisible: false 
 
         }
         
         this.handelInputChange=this.handelInputChange.bind(this);
+        this.handelFormSubmit=this.handelFormSubmit.bind(this);
+        
     }
 
     handelInputChange(event){
         this.setState({ [event.target.name]: event.target.value})
         
 }
+handelFormSubmit(event){
+    event.preventDefault()
+    if(this.state.contentVisible){
+        this.setState({
+            color: '',
+            pluralNoun: '',
+            adjectiveOne: '',
+            celebOne: '',
+            adjectiveTwo: '',
+            nounOne: '',
+            numberOne: '',
+            numberTwo: '',
+            nounTwo: '',
+            adjectiveThree: '',
+            celebTwo: '',
+            celebThree:'',
+            adjectiveFour:'',
+            nounThree:'',
+            celebFour: '',
+            adjectiveFive:'',
+            contentVisible: false 
 
+        })
+    } else{
+    this.setState({contentVisible: !this.state.contentVisible })
+}
+}
     render(){
 
         const inputData=[
@@ -60,14 +90,19 @@ class Card extends Component{
         ]
 
         return(
-            <div className="card">
+            <form onSubmit={this.handelFormSubmit} className="card">
+            <div className="card__inputs">
                 {
                     inputData.map(data => Input((data), this.handelInputChange))
                 }
-        
-            
+                </div>
+                <button type="submit">{!this.state.contenVisible ? 'Generate MadLib' : 'Clear Form'}</button>
+                {
+                
+                this.state.contentVisible ? <Content data={this.state}/> : ''
+                }
                     
-            </div>
+            </form>
         )
     }
 }
