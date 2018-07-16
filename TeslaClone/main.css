@@ -1,41 +1,109 @@
-body {
-  background: url(teslas.jpg) no-repeat;
-  background-size: 100%;
+html {
+  background: url(teslas.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Raleway", sans-serif;
 }
-header #nav-right {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  text-align: right;
-  font-size: 15px;
-  color: white;
-}
-header #nav-left {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  text-align: left;
-  font-size: 15px;
-  color: white;
-}
-header ul li {
-  display: inline-block;
-  margin: 10px;
+#container {
+  margin: auto;
+  width: 1300px;
 }
 #logo img {
-  width: 12%;
-}
-footer {
+  width: 150px;
+  float: left;
   position: absolute;
-  left: 0px;
-  bottom: 0px;
+}
+#nav-left {
+  float: left;
+  margin-left: 205px;
+}
+#nav-right {
+  margin-left: 750px;
+}
+.nav-btn {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+}
+#content {
+  margin-top: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 10px;
+}
+#content #banner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+#content #marketing {
+  margin-top: 20px;
   text-align: center;
-  width: 100%;
-  margin-bottom: 0px;
   color: white;
 }
-#footer-center ul li {
+#line-1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+#line-2 {
+  font-size: 0.9em;
+}
+#btns {
+  text-align: center;
+  margin-top: 40px;
   display: inline-block;
 }
-#flag {
+.btn {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px 24px 10px 24px;
+  max-width: 30px;
+  border: 1px solid transparent;
 }
+#btns a {
+  text-decoration: none;
+  font-size: 0.9em;
+}
+.btn:hover {
+  border: 1px solid white;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 1300px;
+  height: 30px;
+  text-align: center;
+}
+.footer-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 0.8em;
+}
+#flag {
+  width: 20px;
+  margin-bottom: -5px;
+}
+
+/* footer {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  width: 1300px;
+  height: 30px;
+}
+#footer-center {
+  display: inline-block;
+}
+.footer-link {
+  text-decoration: none;
+  color: white;
+  margin-left: 25px;
+  font-size: 0.8em;
+}
+#flag {
+  width: 1em; */
+/* } */
