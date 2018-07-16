@@ -5,13 +5,14 @@ class Card extends Component{
     constructor(){
         super()
         this.state={
-            color: '',
+            color: 'Blue',
             pluralNoun: ''
         }
         
+        this.handelInputChange=this.handelInputChange.bind(this);
     }
-    handelInputChange(){
-        this.setState({ color: 'red'})
+    handelInputChange(event){
+        this.setState({ color: event.target.value})
         
 }
 
@@ -20,7 +21,7 @@ class Card extends Component{
         return(
         <div className="card">
             <h1>{this.state.color}</h1>
-            <input/>
+            <input onChange={(event) => this.handelInputChange(event)}/>
             </div>
         )
         return(
