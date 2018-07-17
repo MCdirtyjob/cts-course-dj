@@ -1,30 +1,33 @@
 import React, {Component} from 'react';
 import Input from './input';
 import Content from './content';
+
+const INITIAL_STATE={
+    color: '',
+        pluralNoun: '',
+        adjectiveOne: '',
+        celebOne: '',
+        adjectiveTwo: '',
+        nounOne: '',
+        numberOne: '',
+        numberTwo: '',
+        nounTwo: '',
+        adjectiveThree: '',
+        celebTwo: '',
+        celebThree:'',
+        adjectiveFour:'',
+        nounThree:'',
+        celebFour: '',
+        adjectiveFive:'',
+        contentVisible: false 
+
+    }
 class Card extends Component{
+    
 
     constructor(){
         super()
-        this.state={
-            color: '',
-            pluralNoun: '',
-            adjectiveOne: '',
-            celebOne: '',
-            adjectiveTwo: '',
-            nounOne: '',
-            numberOne: '',
-            numberTwo: '',
-            nounTwo: '',
-            adjectiveThree: '',
-            celebTwo: '',
-            celebThree:'',
-            adjectiveFour:'',
-            nounThree:'',
-            celebFour: '',
-            adjectiveFive:'',
-            contentVisible: false 
-
-        }
+        this.state= INITIAL_STATE;
         
         this.handelInputChange=this.handelInputChange.bind(this);
         this.handelFormSubmit=this.handelFormSubmit.bind(this);
@@ -38,28 +41,9 @@ class Card extends Component{
 handelFormSubmit(event){
     event.preventDefault()
     if(this.state.contentVisible){
-        this.setState({
-            color: '',
-            pluralNoun: '',
-            adjectiveOne: '',
-            celebOne: '',
-            adjectiveTwo: '',
-            nounOne: '',
-            numberOne: '',
-            numberTwo: '',
-            nounTwo: '',
-            adjectiveThree: '',
-            celebTwo: '',
-            celebThree:'',
-            adjectiveFour:'',
-            nounThree:'',
-            celebFour: '',
-            adjectiveFive:'',
-            contentVisible: false 
-
-        })
+        this.setState(INITIAL_STATE)
     } else{
-    this.setState({contentVisible: !this.state.contentVisible })
+    this.setState({contentVisible: true})
 }
 }
     render(){
@@ -71,7 +55,7 @@ handelFormSubmit(event){
             {title: 'Celebrity', state: this.state.celebOne, name: 'celebOne'},
             
 
-            {title: 'Adjective', state: this.state.abjectiveTwo, name: 'adjectiveTwo'},
+            {title: 'Adjective', state: this.state.adjectiveTwo, name: 'adjectiveTwo'},
             {title: 'Noun', state: this.state.nounOne, name: 'nounOne'},
             {title: 'Number', state: this.state.numberOne, name: 'numberOne'},
             {title: 'Number', state: this.state.numberTwo, name: 'numberTwo'},
@@ -79,7 +63,7 @@ handelFormSubmit(event){
 
 
             {title: 'Noun', state: this.state.nounTwo, name: 'nounTwo'},
-            {title: 'Adjective', state: this.state.abjectiveThree, name: 'adjectiveThree'},
+            {title: 'Adjective', state: this.state.adjectiveThree, name: 'adjectiveThree'},
             {title: 'Celebrity', state: this.state.celebTwo, name: 'celebTwo'},
             {title: 'Celebrity', state: this.state.celebThree, name: 'celebThree'},
 
