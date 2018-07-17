@@ -5,6 +5,12 @@ class Content extends Component{
         super()
         this.count=1;
     }
+    componentDidUpdate(){
+        this.count=1;
+    }
+    componentWillReciveProps(){
+        this.count=1;
+    }
     renderLabel(data){
         return[ 
             <div className="card__content__label">{this.count++}</div>,
