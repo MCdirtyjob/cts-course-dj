@@ -1,6 +1,16 @@
 import React,{Component} from 'react';
 
 class Content extends Component{
+    constructor(){
+        super()
+        this.count=1;
+    }
+    renderLabel(data){
+        return[ 
+            <div className="card__content__label">{this.count++}</div>,
+            <b>{data}</b>
+        ]
+    }
     render(){
         console.log(this.props.data);
         const data = this.props.data;

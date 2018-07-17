@@ -29,16 +29,16 @@ class Card extends Component{
         super()
         this.state= INITIAL_STATE;
         
-        this.handelInputChange=this.handelInputChange.bind(this);
-        this.handelFormSubmit=this.handelFormSubmit.bind(this);
+        this.handleInputChange=this.handleInputChange.bind(this);
+        this.handleFormSubmit=this.handleFormSubmit.bind(this);
         
     }
 
-    handelInputChange(event){
+    handleInputChange(event){
         this.setState({ [event.target.name]: event.target.value})
         
 }
-handelFormSubmit(event){
+handleFormSubmit(event){
     event.preventDefault()
     if(this.state.contentVisible){
         this.setState(INITIAL_STATE)
@@ -73,21 +73,19 @@ handelFormSubmit(event){
             {title: 'Adjective', state: this.state.adjectiveFive, name: 'adjectiveFive'},
         ]
 
-        return(
-            <form onSubmit={this.handelFormSubmit} className="card">
-            <div className="card__inputs">
+        return (
+            <form onSubmit={this.handleFormSubmit} className="card">
+                <div className="card__inputs">
                 {
                     inputData.map((data, index) => {
-                        return Input((data), this.handelInputChange, index)
+                        return Input( (data), this.handleInputChange, index) 
                     })
                 }
                 </div>
-                <button className={`card__${!this.state.contentVisible ? 'generate' : 'clear'}`} type="submit">{!this.state.contenVisible ? 'Generate MadLib' : 'Clear Form'}</button>
+                <button className={`card__${!this.state.contentVisible ? 'generate' : 'clear'}`} type="submit">{!this.state.contentVisible ? 'Generate Mad Lib' : 'Clear Form'}</button>
                 {
-                
-                this.state.contentVisible ? <Content data={this.state}/> : ''
+                    this.state.contentVisible ? <Content data={this.state}/> : ''
                 }
-                    
             </form>
         )
     }

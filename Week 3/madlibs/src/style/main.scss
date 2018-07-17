@@ -10,7 +10,12 @@
 }
 
 
-
+.gray{
+    background-color: rgb(119, 116, 116);
+}
+.green{
+    background-color: #00CB79;
+}
 
 .home{
     position: relative;
@@ -109,7 +114,18 @@
         background-color: #F2F2F2;
         justify-self: center;
         margin-bottom: 84px;
-
+        &__label{
+            height: 20px;
+            width: 20px;
+            line-height: 22px;
+            background-color: black;
+            border-radius: 50%;
+            font-size: 17px;
+            text-align: center;
+            color: white;
+            display: inline-block;
+            margin: 4px;
+        }
         
         p{
             padding: 50px 47px;
@@ -150,12 +166,11 @@
         transition: all .3s ease;
         &:focus{
             outline: none;
-            border-top: 1px solid rgb(0,255,247);
+            border-bottom: 1px solid rgb(0,255,247);
         }
     }
     &__number{
         grid-column: number-s/number-e;
-        background-color: #00CB79;
         color: white;
         font-size: 20px;
         line-height: 24px;
