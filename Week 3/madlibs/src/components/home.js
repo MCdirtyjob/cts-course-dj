@@ -13,6 +13,8 @@ import Card from './card';
   }
 }
 
+
+export default Home;
 // class Home extends Component {
 //   render() {
 //     return (
@@ -22,4 +24,3 @@ import Card from './card';
 //     );
 //   }
 // }
-export default Home;
