@@ -8,6 +8,9 @@
 }
 
 .header{
+    color: white;
+    font-family: 'Montserrate';
+    text-align: center;
     align-self: center;
 
     &__skew{
@@ -31,6 +34,19 @@
         height: 110vh;
         width: 100vw;
         background-color: #00CB79;
+    }
+    
+    h1{
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 44px;
+    }
+    p{
+        color: rgba(255,255,255,0.75);
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 19px;
+        width: 403px;
     }
 }
 
