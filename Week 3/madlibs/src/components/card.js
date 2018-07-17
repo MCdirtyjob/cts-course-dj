@@ -77,7 +77,9 @@ handelFormSubmit(event){
             <form onSubmit={this.handelFormSubmit} className="card">
             <div className="card__inputs">
                 {
-                    inputData.map(data => Input((data), this.handelInputChange))
+                    inputData.map((data, index) => {
+                        return Input((data), this.handelInputChange, index)
+                    })
                 }
                 </div>
                 <button type="submit">{!this.state.contenVisible ? 'Generate MadLib' : 'Clear Form'}</button>
