@@ -30,7 +30,7 @@ export default class App extends Component {
   }
 
   handleChange = function(date) {
-    console.log("Handleing change", date._d);
+    console.log("Handle change", date._d);
     clearInterval(this.timer);
     this.setState({
       startDate: date
@@ -73,7 +73,9 @@ export default class App extends Component {
 
     this.timer = setInterval(
       function() {
-        var now = today.getTime();
+        var now = moment()
+          .toDate()
+          .getTime();
 
         var distance = countDownDate - now;
 
