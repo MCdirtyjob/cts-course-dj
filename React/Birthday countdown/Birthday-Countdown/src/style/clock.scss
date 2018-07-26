@@ -1,18 +1,18 @@
 .clock {
   grid-row: 3/4;
-  grid-column: 2/11;
+  grid-column: 2/10;
   align-self: end;
 
   background: $color-gray-one;
   text-align: left;
-  height: 70%;
+  height: 80%;
   width: 100%;
   display: grid;
 
   clip-path: polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
 
   grid-template-columns: repeat(auto-fit, minmax(150px, 275px));
-  grid-column-gap: 46px;
+  grid-column-gap: 10px;
 
   align-items: center;
   justify-items: center;
