@@ -13,7 +13,12 @@
 
   transform: rotate(-70deg) translate(-55px, -55px);
 
-  font-family: "Roboto Condensed";
+  font-family: $font-robo;
+
+  &:focus {
+    outline: none;
+    cursor: pointer;
+  }
 
   i {
     margin-right: 15px;
