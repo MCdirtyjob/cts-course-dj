@@ -1,4 +1,3 @@
-# cts-course
-Random text doc
-This is something random that I decided to make within this thing.
-
+# cts-course-dj
+This github repo is for my Coding To Success Course.
+ 
